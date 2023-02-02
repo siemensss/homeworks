@@ -1,7 +1,7 @@
 package homework12;
 
 public class Main {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Author author1 = new Author("Михаил", "Булгаков");
         Author author2 = new Author("Фёдор", "Достоевский");
         Author author3 = new Author("Сергей", "Довлатов");
@@ -18,12 +18,18 @@ public class Main {
         printSeparator();
         System.out.println(book3);
         printSeparator();
-        Book book4 = new Book("Мастер и Маргарита", author1, 1973);
+        Book book4 = new Book("Мастер и Маргарита", author1, 1978);
         if (book3.equals(book4)) {
             System.out.println("Книги одинаковые");
         } else {
             System.out.println("Книги разные");
         }
+        if (book1.hashCode() == book4.hashCode()){
+            System.out.println("Хэш совпадает");
+        }else {
+            System.out.println("Хэш не совпадает");
+        }
+
 
     }
     public static void printSeparator () {
