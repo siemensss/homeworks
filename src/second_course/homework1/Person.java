@@ -1,4 +1,4 @@
-package second_course_homework1;
+package second_course.homework1;
 
 public class Person {
     private String name;
