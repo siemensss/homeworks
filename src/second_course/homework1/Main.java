@@ -1,5 +1,4 @@
-package second_course_homework1;
-import java.util.Arrays;
+package second_course.homework1;
 
 public class Main {
     public static void main(String args[]){
